@@ -1,0 +1,18 @@
+- HTML 기본
+ ● 구조 → <Tag> Content </Tag>
+  : Opening Tag → <Tag>
+  : Closing Tag → </Tag>
+ ● 대부분 open, close 태그 구조 (그렇지않은 것도 존재!)
+ ● 해당 파일의 확장자는 .html 표기
+ ● 닫힘 태그 미작성 시 이후 코드가 전부 해당 태그에 적용
+
+
+- Inspector 도구 ?
+ ● 페이지의 숨은 HTML code 확인 가능!
+ 1. 마우스 오른쪽 클릭
+ 2. inspector 클릭
+ 3. 왼쪽 상단 select an element in the page to inspect it 클릭
+ 4. 브라우저에서 클릭 시 해당 내용에 대한 더 자세한 코드 확인 가능 !
+
+- TIP ?
+ ● MDN 사이트 자주 방문하기
