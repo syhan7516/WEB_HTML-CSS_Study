@@ -10,12 +10,16 @@
     <body>
         <h2>Table 기본 요소</h2>
         <table>
-            
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+
             <tr>
                 <td>신영한</td>
                 <td>28</td>
             </tr>
-            
+        
             <tr>
                 <td>이주환</td>
                 <td>28</td>
@@ -29,11 +33,68 @@
 
         <h2>Table 헤더, 바디, 푸터</h2>
         <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>나이</th>
+                </tr>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <td>신영한</td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td>이주환</td>
+                    <td>28</td>
+                </tr>
+
+                <tr>
+                    <td>권현근</td>
+                    <td>28</td>
+                </tr>
+            </tbody>
         </table>
 
         <h2>Table 행, 열 합치기</h2>
         <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">이름</th>
+                    <th rowspan="2">나이</th>
+                    <th colspan="2">시력</th>
+                </tr>
+
+                <tr>
+                    <th>왼쪽</th>
+                    <th>오른쪽</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>신영한</td>
+                    <td>28</td>
+                    <td>1.0</td>
+                    <td>1.2</td>
+                </tr>
+            
+                <tr>
+                    <td>이주환</td>
+                    <td>28</td>
+                    <td>1.4</td>
+                    <td>1.6</td>
+                </tr>
+
+                <tr>
+                    <td>권현근</td>
+                    <td>28</td>
+                    <td>1.8</td>
+                    <td>2.0</td>
+                </tr>
+            </tbody>
 
         </table>
     </body>
@@ -64,33 +125,28 @@
 
 ------------------------------------------------------------------------------------
 - Table 헤더, 바디, 푸터
+ ● <thead></thead>
+  : table head
+  : 테이블의 헤더를 모은 것
+
+ ● <tbody></tbody>
+  : table body
+  : 테이블의 실 데이터를 모은 것
+
+ ● <tfoot></tfoot>
+  : table foot
+  : 테이블의 푸터
+
+※ 코드 및 보기 편함을 위한 코드 묶기
 
 ------------------------------------------------------------------------------------
 - Table 행, 열 합치기
+ : 속성 값을 부여하여 합치기 가능!
 
+ ● rowspan="숫자" 
+  : 숫자만큼 행을 합침
 
- ● <!DOCTYPE html>
-  : HTML5를 사용한다는 표식
-
- ● <html lang="ko"> 
-  : 문서의 최상위 요소
-  : 해당 태그 사이에 하나의 body tag와 하나의 head tag 존재
-  : lang="ko"를 통해 언어는 한국어로 적용
-
- ● <head></head>
-  : 메타데이터 요소 작성하는 부분
-  : 웹 페이지, 스크립트 정보, CSS 등 실제 문서에 보이지않는 정보를 작성
-
- ● <title></title>
-  : 브라우저 탭상에 표시되는 정보
-
- ● <body></body>
-  : 문서의 모든 내용이 작성되는 부분
-
-------------------------------------------------------------------------------------
-- 오늘의 TIP
- ● HTML Code 간편히 정리
-  : Shift + alt + F
-  : Settings → format 검색 → Editor : Format On Save 체크 표시 → 저장 시 자동 정렬 !
-
+ ● colspan="숫자" 
+  : 숫자만큼 열을 합침
+  
 -->
