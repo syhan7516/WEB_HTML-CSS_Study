@@ -8,7 +8,16 @@
     <!-- head / body -->
 
     <body>
-        
+        <h2>폼 Form</h2>
+        <form>
+            <input type="text" placeholder="텍스트 입력">
+            <br>
+            <input type="password" placeholder="비밀번호 입력">
+            <br>
+            <input type="color">
+            <br>
+            <input type="number" placeholder="숫자 입력">
+        </form>
     </body>
 </html>
 
@@ -27,7 +36,28 @@
   3. action 속성으로 해당 요청의 목적지 제어
   4. method 속성으로 어떤 유형의 HTTP 메소드를 사용할지를 제어
 
-  ● Form 문법 ?
+ ● Form 문법 ?
   : <form action="url" method="전송유형"></form>
+
+------------------------------------------------------------------------------------
+- input ?
+ : 전송 내용을 입력할 수 있는 가장 일반적인 폼 컨트롤 요소
+ + 닫는 태그 X
+ + Content X
+ + 작동방식은 모두 동일하나, type 속성으로 작동방식이 변경 !
+
+ ● input의 예 ?
+  : 체크박스, 색상선택기, 날짜선택기, 비밀번호, 일반텍스트 등 다양하게 존재 !
+
+ ● type 속성 ?
+  : 입력의 타입을 결정해주는 속성
+  + 타입 변경으로 매우 다양한 유형의 입력란, 다른 폼 컨트롤 생성이 가능 !
+
+ ● placeholder 속성 ?
+  : 임시 텍스트를 지정하는 속성으로 창에 뭔가 입력하기 이전에 비어있을 때 보이는 텍스트
+  + 무엇을 입력하면되는지 알려주는 역할 ! 
+
+ ● input 문법 ?
+  : <input type="타입유형" placeholder="텍스트">
 
 -->
