@@ -8,7 +8,7 @@
     <!-- head / body -->
 
     <body>
-        <h2>폼 Form</h2>
+        <h2>폼 Form Input</h2>
         <form>
             <input type="text" placeholder="텍스트 입력">
             <br>
@@ -17,6 +17,32 @@
             <input type="color">
             <br>
             <input type="number" placeholder="숫자 입력">
+        </form>
+        
+        <br>
+        <hr>
+
+        <h2>폼 Form Label</h2>
+        <form>
+            <p>
+                <label for="username">username : </label>
+                <input type="text" placeholder="username" id="username">
+            </p>
+            
+            <p>
+                <label for="userpassword">userpassword : </label>
+                <input type="password" placeholder="userpassword" id="userpassowrd">
+            </p>
+
+            <p>
+                <label for="usercolor">usercolor : </label>
+                <input type="color" id="usercolor">
+            </p>
+
+            <p>
+                <label for="usernumber">usernumber : </label>
+                <input type="number" placeholder="usernumber" id="usernumber">
+            </p>
         </form>
     </body>
 </html>
@@ -60,4 +86,24 @@
  ● input 문법 ?
   : <input type="타입유형" placeholder="텍스트">
 
+------------------------------------------------------------------------------------
+- label ?
+ : 폼을 사용하기 쉽게해주는 등의 접근성을 높여주는 역할을 하는 태그
+ + 시각적으로 출력
+ + 스크린리더로 해당 연결관계를 파악 가능
+ + 레이블 클릭 시 입력창이 연결되는 것처럼 실제로도 연결 제어가능
+
+ ● label 연결 방법 ?
+  : id, for 두 가지의 속성 사용 
+  + input 속성으로 id, label 속성으로 for을 사용 
+  + id 값과 for 값이 동일하여야 연결 가능 
+
+ ● label 연결 방법 ?
+  : <label for="input의 id">Content</label>
+  : <input type="type" placeholder="text" id="label의 for">
+
+------------------------------------------------------------------------------------
+- 오늘의 TIP
+ ● id 값은 고유해야하며, 다른 곳에서 중복 사용 불가 !
+ 
 -->
