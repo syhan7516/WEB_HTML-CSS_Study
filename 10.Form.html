@@ -45,7 +45,50 @@
             </p>
         </form>
 
-        <input type="submit">
+        <br>
+        <hr>
+
+        <h2>폼 Form Button</h2>
+        <form action="/button">
+            <p>
+                <label for="username">username : </label>
+                <input type="text" placeholder="username" id="username">
+            </p>
+            
+            <p>
+                <label for="userpassword">userpassword : </label>
+                <input type="password" placeholder="userpassword" id="userpassowrd">
+            </p>
+
+            <p>
+                <label for="usercolor">usercolor : </label>
+                <input type="color" id="usercolor">
+            </p>
+
+            <p>
+                <label for="usernumber">usernumber : </label>
+                <input type="number" placeholder="usernumber" id="usernumber">
+            </p>
+
+            <p>
+                <h3>Submit Button</h3>
+                <button>Login</button>
+                <button>SignUp</button>
+                <button>Join</button>
+            </p>
+
+            <p>
+                <h3>General Button</h3>
+                <button type="button">Login</button>
+                <button type="button">SignUp</button>
+                <button type="button">Join</button>
+            </p>
+
+            <p>
+                <h3>input → Submit Button</h3>
+                <input type="submit" value="제출">
+            </p>
+        </form>
     </body>
 </html>
 
@@ -129,6 +172,9 @@
 
 - 오늘의 TIP
  ● id 값은 고유해야하며, 다른 곳에서 중복 사용 불가 !
+
  ● input type="submit" value="text" → 제출 기능을 가진 버튼 생성 및 레이블 수정이 가능 !
+
+ ● button 클릭하여 폼 제출할 때 변경된 URL을 보면서 어떤식으로 통신되는지 확인하기 !
  
 -->
