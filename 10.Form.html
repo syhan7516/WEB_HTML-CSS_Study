@@ -44,6 +44,8 @@
                 <input type="number" placeholder="usernumber" id="usernumber">
             </p>
         </form>
+
+        <input type="submit">
     </body>
 </html>
 
@@ -98,12 +100,35 @@
   + input 속성으로 id, label 속성으로 for을 사용 
   + id 값과 for 값이 동일하여야 연결 가능 
 
- ● label 연결 방법 ?
+ ● label 문법 ?
   : <label for="input의 id">Content</label>
   : <input type="type" placeholder="text" id="label의 for">
 
 ------------------------------------------------------------------------------------
+- button ?
+ : form의 button은 폼의 제출 용도로 사용!
+ + 일반적인 버튼 중 form button은 login, signup, join이 큰 예
+ + Opening, Closing tag 존재
+ + tag 사이에 입력되는 모든 텍스트는 버튼 레이블로 지정
+ 
+ ● button 문법 ?
+  : <button>Content</button>
+  + 버튼을 클릭하면 aciotn에 작성된 url로 요청을 보내는 작업 수행 → 폼이 제출되었기 때문 !
+  + form tag 내부의 버튼은 모두 Submit의 기능을 보유
+
+ ● button의 고유 기능만 수행시키려면 ?
+  : <button type="button">Content</button>
+  + type의 값으로 button을 부여
+
+ ● 고유 기능을 가진 button에게 제출 기능을 수행시키려면 ?
+  : <input type="submit">
+  + input tag의 type 속성 값으로 submit을 주면 버튼으로 변경 !
+  + 비추 ! : 닫는 태그가 없고, 레이블을 작성하려면 value 속성을 추가하여 작성 가능  
+
+------------------------------------------------------------------------------------
+
 - 오늘의 TIP
  ● id 값은 고유해야하며, 다른 곳에서 중복 사용 불가 !
+ ● input type="submit" value="text" → 제출 기능을 가진 버튼 생성 및 레이블 수정이 가능 !
  
 -->
