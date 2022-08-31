@@ -89,6 +89,35 @@
                 <input type="submit" value="제출">
             </p>
         </form>
+
+        <hr>
+        <br>
+
+        <h2>폼 Form Name 속성</h2>
+        <form action="/name">
+            <p>
+                <label for="username">username : </label>
+                <input type="text" placeholder="username" id="username" name="ID">
+            </p>
+            
+            <p>
+                <label for="userpassword">userpassword : </label>
+                <input type="password" placeholder="userpassword" id="userpassowrd" name="PWD">
+            </p>
+
+            <p>
+                <label for="usercolor">usercolor : </label>
+                <input type="color" id="usercolor" name="CR">
+            </p>
+
+            <p>
+                <label for="usernumber">usernumber : </label>
+                <input type="number" placeholder="usernumber" id="usernumber" name="NUM">
+            </p>
+            <button>Submit</button>
+
+        </form>
+
     </body>
 </html>
 
@@ -170,7 +199,19 @@
 
 ------------------------------------------------------------------------------------
 - input의 추가 속성 name ?
- : 
+ : 폼 제출할 때 입력한 값에 대한 이름을 붙여주는 것
+ + 입력 값에서 매우 중요한 부분
+ + 보통 공백이없고, 짧음
+ 
+ ● form 제출에서 확인할 수 있는 name ?
+  1. 값을 입력 후 폼 제출
+  2. form action 속성에 입력된 곳으로 전송
+  3. HTTP 요청
+  4. 데이터 전송
+  → 해당 과정에서 결과 URL에서 =뒤에 입력 값이 적힌 것을 확인 가능하며, = 앞부분이 name이란 것을 확인 가능 !
+
+  ● name에 따른 url 형태 보기 ?
+   : /action값?name값=입력값
 
 ------------------------------------------------------------------------------------
 - 오늘의 TIP
