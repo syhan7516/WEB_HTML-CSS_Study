@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>WEB_HTML-CSS_Study</title>
+    </head>
+
+    <!-- head / body -->
+
+    <body>
+        <h2>Reddit</h2>
+        <Form action="https://www.reddit.com/search/">
+            <label for="reddit">검색어 입력하기 : </label>
+            <input type="text" placeholder="검색어 입력" id="reddit" name="q">
+            <button>검색</button>
+        </Form>
+        <hr>
+        <br>
+        
+        <h2>Google</h2>
+        <form action="https://www.google.com/search">
+            <label for="google">검색어 입력하기 : </label>
+            <input type="text" placeholder="검색어 입력" id="google" name="q">
+            <button>검색</button>
+        </form>
+        <hr>
+        <br>
+
+        <h2>Youtube</h2>
+        <form action="https://www.youtube.com/results">
+        <label for="youtube">검색어 입력하기 : </label>
+          <input type="text" placeholder="검색어 입력" id="youtube" name="search_query">
+          <button>검색</button>
+        </form>
+        <hr>
+        <br>
+    </body>
+</html>
+
+<!--
+
+< FormPractice >
+------------------------------------------------------------------------------------
+- Reddit / Google / Youtube 검색 폼 만들기
+ : Form을 활용한 구글/레딧/유튜브 검색 만들기 
+
+ ● 원리 ?
+  : 입력 값을 전송하고, URL에서 해당 위치를 정확하게 알면 가능
+
+ ● 어떻게 ?
+  : 해당 사이트에서 아무거나 여러 번 검색 후 URL중 변경되는 부분과 그렇지않은 부분을 확인 후 코드 작성
+  1. action 값의 부분 확인 !
+  2. 검색어 입력되는 부분 확인 !
+  3. name 부분에 입력 값으로 넣기 !
+ 
+-->
