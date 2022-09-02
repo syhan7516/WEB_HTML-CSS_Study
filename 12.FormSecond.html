@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>WEB_HTML-CSS_Study</title>
+    </head>
+
+    <!-- head / body -->
+
+    <body>
+        <h2>폼 Form checkbox 타입 기본</h2>
+        <form action="/checkbox">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">동의합니다.</label>
+            <button>제출</button>
+        </form>
+
+        <br>
+
+        <h2>폼 Form checkbox 타입 PreCheck</h2>
+        <form action="/checkbox">
+            <input type="checkbox" id="agree" name="agree" checked>
+            <label for="agree">동의합니다.</label>
+            <button>제출</button>
+        </form>
+
+    </body>
+</html>
+
+<!--
+
+< Form >
+------------------------------------------------------------------------------------
+- 추가적인 input type checkbox ?
+ : 체크 방법으로 입력하는 타입
+ + id와 name을 설정하여 체크가 어떤 것과 연결되었는지 표시가 필요
+ 
+ ● checkbox 문법 ?
+  : <input type="checkbox"
+ 
+ ● 미리 체크를 하려면 ?
+  : 코드에 checked 추가
+  : <input type="checkbox" id="agree" name="agree" checked>
+ 
+ ● 제출할 때 어떻게 전달 ?
+  : 체크된 항목은 name=on 
+  : 체크안된 항목은 아무것도 X
+  
+  ------------------------------------------------------------------------------------
+- 오늘의 TIP
+
+-->
