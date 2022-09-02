@@ -112,6 +112,25 @@
             <input type="range" id="volume" name="volume" value="0" min="0" max="100" step="20">
             <button>제출</button>
         </form>
+
+        <br>
+        <hr>
+
+        <h2>폼 Form textarea - 기본</h2>
+        <form action="/textarea">
+            <label for="textarea_box">장문 : </label>
+            <textarea id="textarea_box" name="textarea"></textarea>
+            <button>제출</button>
+        </form>
+
+        <br>
+
+        <h2>폼 Form textarea - 최초의 행, 열 설정</h2>
+        <form action="/textarea">
+            <label for="textarea_box">장문 : </label>
+            <textarea id="textarea_box" name="textarea" rows="30"  cols="30" placeholder="INPUT TEXT HERE"></textarea>
+            <button>제출</button>
+        </form>
     </body>
 </html>
 
@@ -196,6 +215,25 @@
   : <input type="range" min="값"
   : <input type="range" max="값"
   : <input type="range" step="값"
+
+  - 추가적인 input type checkbox ?
+ : 체크 방법으로 입력하는 타입
+ + id와 name을 설정하여 체크가 어떤 것과 연결되었는지 표시가 필요
+ + 그룹 중에서 여러 개의 항목 선택 가능 
+
+--------------------------------------------------------------------------------------
+- 추가적인 text area tag ?
+ : 여러 줄의 텍스트 입력 가능
+ + 입력 타입이아닌 태그
+ + placeholder 속성 사용 가능
+
+ ● textarea 문법 ?
+  : <textarea></textarea>
+
+ ● 행, 열의 최초 값 설정 ?
+  : <textarea rows="값"></textarea>
+  : <textarea cols="값"></textarea>
+  : <textarea rows="값" cols="값"></textarea>
   
 --------------------------------------------------------------------------------------
 - 오늘의 TIP
