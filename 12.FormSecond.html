@@ -8,7 +8,7 @@
     <!-- head / body -->
 
     <body>
-        <h2>폼 Form checkbox 타입 기본</h2>
+        <h2>폼 Form checkbox 타입 - 기본</h2>
         <form action="/checkbox">
             <input type="checkbox" id="agree" name="agree" value="AG">
             <label for="agree">동의합니다.</label>
@@ -17,7 +17,7 @@
 
         <br>
 
-        <h2>폼 Form checkbox 타입 PreCheck</h2>
+        <h2>폼 Form checkbox 타입 - PreCheck</h2>
         <form action="/checkbox">
             <input type="checkbox" id="agree" name="agree" checked>
             <label for="agree">동의합니다.</label>
@@ -27,7 +27,7 @@
         <br>
         <hr>
 
-        <h2>폼 Form radio 타입 기본 & 그룹화</h2>
+        <h2>폼 Form radio 타입 - 기본 & 그룹화</h2>
         <form action="/radio">
             <input type="radio" id="small" name="size">
             <label for="small">Small</label>
@@ -42,7 +42,7 @@
 
         <br>
 
-        <h2>폼 Form radio 타입 그룹화 문제 해결</h2>
+        <h2>폼 Form radio 타입 - 그룹화 문제 해결</h2>
         <form action="/radio">
             <input type="radio" id="small" name="size" value="small">
             <label for="small">Small</label>
@@ -58,7 +58,7 @@
         <br>
         <hr>
 
-        <h2>폼 Form select 타입 기본</h2>
+        <h2>폼 Form select 타입 - 기본</h2>
         <form action="/select">
             <label for="track">트랙 선택 : </label>
             <select name="track" id="track">
@@ -73,7 +73,7 @@
 
         <br>
 
-        <h2>폼 Form select 타입 PreSelected</h2>
+        <h2>폼 Form select 타입 - PreSelected</h2>
         <form action="/select">
             <label for="track">트랙 선택 : </label>
             <select name="track" id="track">
@@ -83,6 +83,33 @@
                 <option value="FrontEnd">FrontEnd</option>
                 <option value="BackEnd">BackEnd</option>
             </select>
+            <button>제출</button>
+        </form>
+
+        <br>
+        <hr>
+
+        <h2>폼 Form range 타입 - 기본</h2>
+        <form action="/range">
+            <label for="volume">볼륨 조절 : </label>
+            <input type="range" id="volume" name="volume">
+            <button>제출</button>
+
+        <br>
+
+        <h2>폼 Form range 타입 - 최초 값 설정</h2>
+        <form action="/range">
+            <label for="volume">볼륨 조절 : </label>
+            <input type="range" id="volume" name="volume" value="0">
+            <button>제출</button>
+        </form>
+
+        <br>
+
+        <h2>폼 Form range 타입 - 최소, 최대, 단위</h2>
+        <form action="/range">
+            <label for="volume">볼륨 조절 : </label>
+            <input type="range" id="volume" name="volume" value="0" min="0" max="100" step="20">
             <button>제출</button>
         </form>
     </body>
@@ -137,6 +164,13 @@
  + <select>, <option> 요소를 함께 사용
  + select의 name을 통해 그룹화, 레이블 설정을 위해 select의 id 값을 지정
  
+ ● select 문법 ?
+  : <select>
+     <option>menu1</option>
+     <option>menu2</option>
+     <option>menu3</option>
+    </select>
+
  ● <select> ?
   : select 타입의 상위 태그로 하위 태그에 여러 <option>을 가짐.
 
@@ -147,7 +181,22 @@
  ● 미리 선택을 하려면 ?
   : option 내부에 코드 selected 추가
   : <option value="~" selected>Content</option>
- 
+
+--------------------------------------------------------------------------------------
+- 추가적인 input type range ?
+ : 슬라이더를 이용하여 사용자가 그 범위 내에서 값의 입력받는 타입
+
+ ● range 문법 ?
+  : <input type="range">
+
+ ● 최초 값 설정 ?
+  : <input type="range" value=값>
+
+ ● 최대, 최소, 단위 값 설정 ?
+  : <input type="range" min="값"
+  : <input type="range" max="값"
+  : <input type="range" step="값"
+  
 --------------------------------------------------------------------------------------
 - 오늘의 TIP
  
