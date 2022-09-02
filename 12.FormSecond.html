@@ -54,6 +54,37 @@
             <label for="free">Free</label>
             <button>제출</button>
         </form>
+
+        <br>
+        <hr>
+
+        <h2>폼 Form select 타입 기본</h2>
+        <form action="/select">
+            <label for="track">트랙 선택 : </label>
+            <select name="track" id="track">
+                <option value="">Select Track</option>
+                <option value="PM">Product Manager</option>
+                <option value="Design">Design</option>
+                <option value="FrontEnd">FrontEnd</option>
+                <option value="BackEnd">BackEnd</option>
+            </select>
+            <button>제출</button>
+        </form>
+
+        <br>
+
+        <h2>폼 Form select 타입 PreSelected</h2>
+        <form action="/select">
+            <label for="track">트랙 선택 : </label>
+            <select name="track" id="track">
+                <option value="">Select Track</option>
+                <option value="PM" selected>Product Manager</option>
+                <option value="Design">Design</option>
+                <option value="FrontEnd">FrontEnd</option>
+                <option value="BackEnd">BackEnd</option>
+            </select>
+            <button>제출</button>
+        </form>
     </body>
 </html>
 
@@ -100,6 +131,26 @@
   : 선택된 항목은 URL에서 name=value으로 서버에 전달
 
 --------------------------------------------------------------------------------------
+- 추가적인 input type select ?
+ : 드롭다운 메뉴로 입력하는 타입
+ + 그룹에서 하나만을 선택 가능
+ + <select>, <option> 요소를 함께 사용
+ + select의 name을 통해 그룹화, 레이블 설정을 위해 select의 id 값을 지정
+ 
+ ● <select> ?
+  : select 타입의 상위 태그로 하위 태그에 여러 <option>을 가짐.
+
+ ● <option> ?
+  : select 타입의 하위 태그로 실제 우리가 선택할 항목을 보여주는 요소
+  + option내에 value 속성으로 서버에 보낼 정보를 지정 
+
+ ● 미리 선택을 하려면 ?
+  : option 내부에 코드 selected 추가
+  : <option value="~" selected>Content</option>
+ 
+--------------------------------------------------------------------------------------
 - 오늘의 TIP
+ 
+ ● select의 첫 번째 option은 보통 더미나 placeholder로 설정하여 질문 형태로 사용
 
 -->
