@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>WEB_HTML-CSS_Study</title>
+
+        <style>
+            section
+            {
+                color:red;
+            }
+        </style>
+
+        <link rel="stylesheet" href="1.Basic.css">
+    </head>
+
+    <!-- head / body -->
+
+    <body>
+        <h2>CSS 작성 방법 1</h2>
+        <p>
+            <div style="color:red">인라인 스타일</div>
+        </p>
+
+        <hr>
+        
+        <h2>CSS 작성 방법 2</h2>
+        <p>
+            <section>head에 스타일 태그를 추가하여 CSS 작성</section>
+        </p>
+        
+        <hr>
+
+        <h2>CSS 작성 방법 3</h2>
+        <p>
+            <article>외부스타일 시트에서 스타일 작성</article>
+        </p>
+        
+        <hr>
+    </body>
+</html>
+
+<!--
+
+< CSS 기본 >
+------------------------------------------------------------------------------------
+- CSS ?
+ : Cascading Style Sheets
+ : 스타일을 정하고, 페이지에 입력된 HTML 컨텐츠를 시각적으로 보이는 형태로 만들어줌.
+ + 쉽지만 양이 방대
+ + MDN사이트 참고
+
+ ● CSS 규칙 ?
+  : 선택자 { 특성 : 값; }
+  : 예) h1 { color : purple; } → h1 모든 요소 글자색을 보라색으로 !
+
+  : 선택자 { 특성1 : 값; 특성2 : 값 ... } 
+  : 예) img { width : 100px; height : 200px; } → img 모든 요소를 넓이 100px, 높이 200px로 지정 !
+
+ ● CSS 작성 방법 ?
+  1. 인라인 스타일 - HTML 요소에 직접 스타일을 작성
+   : <선택자 style="특성:값">
+
+  2. head에 스타일 태그를 추가하여 CSS 작성
+   : <head> 
+        <style>
+          선택자
+          {
+            특성:값;
+          }
+        </style> 
+     </head>
+
+  3. 외부스타일 시트에서 스타일 작성
+   : head에서 link 태그 작성을 통해 연결 필요
+     <link rel="stylesheet" href="css file path">
+     
+   : css file에 css code 작성
+     선택자  
+     {
+       특성:값;
+      }   
+
+-->
